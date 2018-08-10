@@ -65,6 +65,6 @@ dummyobject = {parent: {
      parent4: 'Dont reroot me Parent4',
 };
 
-//console.log(util.inspect(rerootElements(a, table, newname), false, null));
+const util = require('util');
 dummyobject = rerootElements(dummyobject, rerootables, 'abc');
-console.log(dummyobject);
+console.log(util.inspect(rerootElements(a, table, newname), false, null));
